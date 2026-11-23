@@ -1,13 +1,13 @@
 # Memory Game
 
-A C++ memory matching game built with Raylib. Choose to play with numbers or pictures, then select a grid size and find all the matching pairs.
+A C++ memory matching game made with Raylib.
 
 ## How to Play
 
 1. Choose **Numbers** or **Pictures**.
 2. Choose a **2×2**, **4×4**, or **6×6** grid.
-3. Click tiles to reveal them and find matching pairs.
-4. Match every pair to see the **YOU WIN!** message.
+3. Click two tiles to reveal them and find matching pairs.
+4. Match every pair to win.
 
 ## Controls
 
@@ -27,10 +27,24 @@ A C++ memory matching game built with Raylib. Choose to play with numbers or pic
 
 Open `Saturday.slnx` in Visual Studio and run the project.
 
-The game loads its pictures from `project/resources`. If they don’t load when running from Visual Studio, set the project’s **Working Directory** to `$(ProjectDir)` under **Project Properties → Configuration Properties → Debugging**.
+The game loads picture assets from `project/resources`. If the pictures don’t load, set the project’s **Working Directory** to `$(ProjectDir)` under **Project Properties → Configuration Properties → Debugging**.
 
-## Picture Assets
+## Project Structure
 
-The `project/resources` folder should contain `pictures1.png` through `pictures18.png`.
-
-Keep this folder with the project so picture mode can load its images.
+    Saturday/
+    ├── .gitignore
+    ├── README.md
+    ├── Saturday.slnx
+    └── project/
+        ├── Memory.cpp
+        ├── Memory.h
+        ├── MemoryTile.cpp
+        ├── MemoryTile.h
+        ├── main.cpp
+        ├── project.vcxproj
+        ├── project.vcxproj.filters
+        └── resources/
+            ├── pictures1.png
+            ├── pictures2.png
+            ├── ...
+            └── pictures18.png
