@@ -1,7 +1,7 @@
 # Memory Game
 ## Gameplay
 
-![Memory game gameplay](assets/memorygame.gif)
+![Memory game gameplay](Docs/memorygame.gif)
 A C++ memory matching game made with Raylib.
 
 ## How to Play
